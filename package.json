@@ -5,7 +5,9 @@
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
+    "react-scripts": "3.0.1",
+    "rich-markdown-editor": "9.8.2",
+    "immutable": "4.0.0-rc.12"
   },
   "scripts": {
     "start": "react-scripts start",

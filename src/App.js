@@ -1,24 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import RichMarkdownEditor from 'rich-markdown-editor';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{backgroundColor: '#eee', padding: '50pt', height: '100vh'}}>
+      <div style={{border: '1px solid black'}}>
+      <RichMarkdownEditor
+        style={{height: '100%'}}
+        readOnly={false}
+        id='example'
+        defaultValue={''}
+        onShowToast={message => window.alert(message)}
+        placeholder='placeholder'
+      />
+      </div>
     </div>
   );
 }
